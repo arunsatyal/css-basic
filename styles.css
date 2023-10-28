@@ -1,0 +1,69 @@
+p {
+  color: blue;
+}
+
+#fifth {
+  color: red;
+}
+
+.pg {
+  color: orange;
+  background: black;
+}
+
+/* Decendant (space) */
+section p {
+  color: red;
+}
+
+/* Child (>) */
+section > p {
+  background: green;
+}
+
+/* Section + div (>) */
+section + div {
+  background: Purple;
+}
+
+/* Sibling (~) */
+section > div p {
+  background: orange;
+  display: block;
+}
+
+/* Attribute Selector */
+[href] {
+  color: green;
+  font-size: 32px;
+}
+
+a[href] {
+  color: maroon;
+}
+
+[href="contact.html"] {
+  background: yellow;
+  color: blue;
+}
+
+/* Pseudo-elements selector */
+p::first-letter {
+  display: block;
+  margin: 20px 0;
+  font-size: 30px;
+  font-style: italic;
+}
+/* Pseudo-class selector */
+a:hover {
+  background: black;
+}
+
+p:nth-child(2) {
+  color: pink;
+}
+/* odd even */
+p:nth-child(odd) {
+  color: blue;
+  font-size: 20px;
+}
